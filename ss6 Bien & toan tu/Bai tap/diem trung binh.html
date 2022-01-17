@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diem trung binh</title>
+</head>
+<body>
+<table>
+<tr>
+    <td> Điểm vật lý:</td>
+    <td> <input type="number" placeholder="Nhập điểm lý" name="ly" id="ly"> </td>
+</tr>
+<tr>
+    <td> Điểm hoá học:</td>
+    <td> <input type="number" placeholder="Nhập điểm hoá" name="hoa" id="hoa"> </td>
+</tr>
+<tr>
+    <td> Điểm sinh học:</td>
+    <td> <input type="number" placeholder="Nhập điểm sinh" name="sinh" id="sinh"> </td>
+</tr>
+    <tr>
+        <td> <button onclick="tb()">Trung bình</button> </td>
+        <td> <input type="reset" value="Nhập lại"></td>
+    </tr>
+</table>
+<script>
+        function tb() {
+        let x = Number(document.getElementById('ly').value);
+        let y = Number(document.getElementById('hoa').value);
+        let z = Number(document.getElementById('sinh').value);
+        let sum = (x + y + z)/3;
+        alert("Điểm trung bình là:" + " " + sum)
+    }
+</script>
+</body>
+</html>
