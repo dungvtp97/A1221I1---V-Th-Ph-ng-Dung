@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DO YOU LOVE ME</title>
+</head>
+<body>
+<h1 style="position:absolute; left:220px; top:75px;">CÓ YÊU DUN NHIỀU HÔNG?</h1>
+<button type="button" id="yes" onclick="yes()" style="position:absolute; left:270px; top:150px;">CÓ</button>
+<button type="button" id="no" onmouseover="no()" style="position:absolute; left:350px; top:150px;">KHÔNG</button>
+
+<script>
+    function yes(){
+        alert("Dun biết mà!!!!")
+    }
+    function no(){
+        var x= Math.round(Math.random()*window.innerWidth)
+        var y= Math.round(Math.random()*window.innerHeight)
+        document.getElementById("no").style.left=x+"px"
+        document.getElementById("no").style.top=y+"px"
+    }
+</script>
+</body>
+</html>
